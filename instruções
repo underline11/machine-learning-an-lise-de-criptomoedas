@@ -1,0 +1,74 @@
+Instruções para Executar o Projeto
+
+1. Configuração do Ambiente:
+
+Instalar o Python:Certidãohttps://www.
+Configurar um Ambiente Virtual: P
+bater
+python -m venv venv
+venv\Scripts\activate
+source venv/bin/activate
+2. Instalação das Dependências:
+
+Crie um arquivo requirements.txt: Li
+pandas
+matplotlib
+Instale as Dependências: Execute o corequirements.txt
+pip install -r requirements.txt
+3. Preparação dos Dados:
+
+Obtenha o arquivo CSV: CertDate, `Open,High, `EULow, `Close, `AjusteAdj Close, e Volume.
+Coloque o Arquivo CSV no Diretório do Projeto: Sal
+4. Análise e Visualização dos Dados:
+
+Carregue os Dados: Não
+import pandas as pd
+
+# Carregar dados
+data = pd.read_csv('caminho/para/arquivo.csv')
+Diagnóstico Inicial: Ver
+print(data.head())
+print(data.info())
+Preparação dos Dados: Convdatetime
+data['Date'] = pd.to_datetime(data['Date'])
+Preparação dos Dados: Convdatetime
+data['Date'] = pd.to_datetime(data['Date'])
+Criação das Visualizações: Utilizar
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(12, 6))
+
+# Preço de Fechamento
+plt.subplot(2, 1, 1)
+plt.plot(data['Date'], data['Close'], label='Preço de Fechamento')
+plt.xlabel('Data')
+plt.ylabel('Preço de Fechamento (USD)')
+plt.title('Variação do Preço de Fechamento do Bitcoin')
+plt.legend()
+
+# Volume de Negociação
+plt.subplot(2, 1, 2)
+plt.plot(data['Date'], data['Volume'], label='Volume de Negociação', color='orange')
+plt.xlabel('Data')
+plt.ylabel('Volume de Negociação')
+plt.title('Volume de Negociação do Bitcoin')
+plt.legend()
+
+plt.tight_layout()
+plt.show()
+5. Redação do Relatório:
+
+Principais características e ajustes: Documente qu
+Análise de Tendências: Analis
+Relação Preço vs. Volume: Disco
+Conclusões e Recomendações: Escrev
+6. Salvamento e Compartilhamento:
+
+Salve os Gráficos:Você pode salvá-lo
+plt.savefig('preco_fechamento.png')
+plt.savefig('volume_negociacao.png')
+Compartilhe o Relatório: Comp
+7. Encerramento do Projeto:
+
+Desative o Ambiente Virtual: Quando
+deactivate
