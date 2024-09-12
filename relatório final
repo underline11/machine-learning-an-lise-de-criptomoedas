@@ -1,0 +1,50 @@
+Relatório Final: Análise da Flutuação do Preço de Fechamento do Bitcoin
+Introdução
+Este projeto visa analisar a flutuação do preço de fechamento do Bitcoin utilizando dados históricos fornecidos pela [Nome da Fintech]. O objetivo é identificar tendências e padrões nas variações de preço e volume de negociação para fornecer insights valiosos para a equipe de investimentos.
+
+Dados Utilizados
+O conjunto de dados contém as seguintes colunas:
+
+Data: Data do registro.
+Open: Preço de abertura.
+Alto: Preço máximo.
+Baixo: Preço mínimo.
+Fechar: Preço de fechamento.
+Adj Close: Preço de fechamento ajustado.
+Volume: Volume de negociação.
+Diagnóstico Inicial
+Carregamento dos Dados: O arquivo CSV foi carregado com sucesso.
+Estrutura dos Dados: O conjunto de dados contém 7 colunas.
+Tipos de Colunas: A coluna Datefoi convertida para o tipo datetime; outras colunas são numéricas.
+Valores Ausentes: Não foram encontrados valores ausentes.
+Anomalias: Dados consistentes sem valores atípicos evidentes.
+Preparação dos Dados
+Conversão de Dados: A coluna Datefoi convertida para o tipo datetime.
+Limpeza de Dados: Nenhuma limpeza adicional foi necessária.
+Visualizações
+Preço de Fechamento
+O gráfico abaixo mostra a variação do preço de fechamento do Bitcoin ao longo do tempo.
+
+
+Volume de Negociação
+O gráfico a seguir ilustra a variação do volume de negociação do Bitcoin ao longo do tempo.
+
+
+Análise e Discussão
+Tendências Visíveis: O preço de fechamento mostra alta volatilidade com períodos de alta e baixa acentuadas.
+Relação Preço x Volume: O volume de negociação frequentemente acompanha variações de preço, mostrando uma clareza entre volume e preço.
+Conclusões e Recomendações
+Conclusões:
+
+O preço do fechamento do Bitcoin é altamente volátil.
+O volume de negociação parece variar conforme as variações de preço.
+Recomendações:
+
+Monitoramento: Acompanhar o volume de negociação para identificar padrões futuros.
+Análise de Eventos: Explore eventos específicos que causem picos sem preço e volume.
+Próximos Passos
+Aprofundamento da Análise: Incluir fatores externos e dados adicionais.
+Modelagem Preditiva: Utilização de modelos preditivos para prever flutuações futuras com base em dados históricos.
+Referências
+Dados históricos fornecidos pela [Nome da Fintech].
+Bibliotecas utilizadas: pandas, matplotlib.
