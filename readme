@@ -1,0 +1,28 @@
+# Análise da Flutuação do Preço de Fechamento do Bitcoin
+
+## Cenário
+Este projeto envolve a análise detalhada da variação do preço de fechamento do Bitcoin ao longo do tempo, com base em dados históricos fornecidos pela [Nome da Fintech]. O objetivo é descobrir tendências, padrões e oferecer insights valiosos para ajudar a entender o comportamento do Bitcoin e suas implicações para investimentos futuros.
+
+## Tarefa
+1. **Carregamento e Diagnóstico Inicial:**
+   - Carregar dados históricos do Bitcoin a partir de um arquivo CSV.
+   - Realizar análise exploratória dos dados, verificando a estrutura e qualidade.
+
+2. **Preparação dos Dados:**
+   - Converter a coluna de datas para o tipo `datetime`.
+   - Limpar dados e tratar valores ausentes ou inconsistências.
+
+3. **Visualização dos Dados:**
+   - Criar gráficos de linha para o preço de fechamento e volume de negociação ao longo do tempo.
+   - Ajustar títulos e legendas para clareza.
+
+4. **Relatório Detalhado:**
+   - Documentar as principais características dos dados e quaisquer ajustes feitos.
+   - Analisar tendências nos gráficos e relacionar movimentos de preço com volume de negociação.
+   - Fornecer conclusões e sugestões para a equipe de investimentos.
+
+## Instruções de Execução
+1. **Instalação das Dependências:**
+   Certifique-se de ter as bibliotecas necessárias instaladas. Você pode instalar as dependências usando o seguinte comando:
+   ```bash
+   pip install pandas matplotlib
